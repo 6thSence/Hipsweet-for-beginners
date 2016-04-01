@@ -93,7 +93,6 @@ const processors = [
     cssShort,
     autoprefixer({ browsers: ['last 2 version'] })
 ];
-if (config.env === 'production') { processors.push(cssnano); }
 
 const lintProcessors = [
     stylelint(rulesStyles),
@@ -107,6 +106,7 @@ gulp.task('styles', () => {
     gulp.src(paths.styles)
         .pipe(postcss(processors))
         .pipe(concat('styles/bundle.css'))
+        .pipe(postcss([cssnano]))
         .pipe(gulp.dest(paths.buildDir));
 });
 
