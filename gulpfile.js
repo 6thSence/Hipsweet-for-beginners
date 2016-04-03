@@ -106,7 +106,7 @@ gulp.task('styles', () => {
     gulp.src(paths.styles)
         .pipe(postcss(processors))
         .pipe(concat('styles/bundle.css'))
-        .pipe(postcss([cssnano]))
+        //.pipe(postcss([cssnano]))
         .pipe(gulp.dest(paths.buildDir));
 });
 
@@ -132,7 +132,7 @@ gulp.task('stylelint', () => {
 
 gulp.task('fonts', () => {
     gulp.src('./src/fonts/**/*')
-        .pipe(filter(['*.woff', '*.woff2']))
+        .pipe(filter(['*.woff', '*.woff2', '*.ttf']))
         .pipe(gulp.dest(`${paths.buildDir}/fonts`));
 });
 
