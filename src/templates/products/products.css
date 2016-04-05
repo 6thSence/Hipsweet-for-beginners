@@ -2,27 +2,98 @@
     width: 100%;
     height: 1450px;
     background: url('../assets/patrn.png');
-
     }
 
     .products__wrap {
-        height: 100%;
-        width: 1265px;
         margin: auto;
         padding: 140px * *;
+        width: 1265px;
         }
 
     .products__title {
-        font: 72px/1 Malina;
+        margin: 0 * 30px;
         color: #393939;
         text-align: center;
-        margin: 0 * 30px;
+        font: 72px/1 Malina;
         }
 
     .products__text {
-        width: 935px;
         margin:  * auto 25px;
-        font: 18px/20px Helvetica, Arial;
+        width: 935px;
         color: #883213;
         text-align: center;
+        font: 18px/20px Helvetica, Arial;
         }
+    .products__list {
+        margin-right: -30px;
+        list-style: none;
+        }
+    .products__item {
+        display: inline-block;
+        margin-right: 30px;
+        width: 260px;
+        vertical-align: top;
+        text-align: center;
+        position: relative;
+        padding-top: 295px;
+        }
+
+        .products__item-photo {
+            position: absolute 0 * *;
+            margin-bottom: 10px;
+            size: 100% 285px;
+            z-index: 1;
+            }
+        .products__item-photo_1 {
+            background: url('../assets/sweet-8.png') center no-repeat;
+            background-size: 100% auto;
+            }
+        .products__item-photo_2 {
+            background: url('../assets/sweet-1.png') center no-repeat;
+            background-size: 100% auto;
+            }
+        .products__item-photo_3 {
+            background: url('../assets/sweet-2.png') center no-repeat;
+            background-size: 100% auto;
+            }
+        .products__item-photo_4 {
+            background: url('../assets/sweet-6.png') center no-repeat;
+            background-size: 100% auto;
+            }
+        .products__item-photo_5 {
+            background: url('../assets/sweet-5.png') center no-repeat;
+            background-size: 100% auto;
+            }
+        .products__item-photo_6 {
+            background: url('../assets/sweet-4.png') center no-repeat;
+            background-size: 100% auto;
+            }
+        .products__item-photo_7 {
+            background: url('../assets/sweet-3.png') center no-repeat;
+            background-size: 80% auto;
+            }
+        .products__item-photo_8 {
+            background: url('../assets/sweet-7.png') center no-repeat;
+            background-size: 100% auto;
+            }
+
+        .products__item-name {
+            margin-bottom: 10px;
+            color: #393939;
+            font: 36px/38px Malina;
+            position: relative;
+            }
+        .products__item-name:after{
+            content: '';
+            display: block;
+            position: absolute -260px * *;
+            size: 240px;
+            background: #000;
+            opacity: .3;
+            border-radius: 50%;
+            z-index: 0;
+            }
+        .products__item-about {
+            color: #ab594a;
+            font: 14px/16px Helvetica, Arial;
+            }
