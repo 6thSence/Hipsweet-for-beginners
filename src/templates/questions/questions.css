@@ -1,6 +1,7 @@
 .questions {
-    size: 100% 825px;
-    background: url('../assets/bg.png') center no-repeat;
+    width: 100%;
+    min-height: 740px;
+    background: url('../assets/bg.png') center repeat-y;
     background-size: 100% auto;
     }
 
