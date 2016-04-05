@@ -1,0 +1,28 @@
+.products {
+    width: 100%;
+    height: 1450px;
+    background: url('../assets/patrn.png');
+
+    }
+
+    .products__wrap {
+        height: 100%;
+        width: 1265px;
+        margin: auto;
+        padding: 140px * *;
+        }
+
+    .products__title {
+        font: 72px/1 Malina;
+        color: #393939;
+        text-align: center;
+        margin: 0 * 30px;
+        }
+
+    .products__text {
+        width: 935px;
+        margin:  * auto 25px;
+        font: 18px/20px Helvetica, Arial;
+        color: #883213;
+        text-align: center;
+        }

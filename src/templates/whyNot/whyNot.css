@@ -1,0 +1,58 @@
+.why-not {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #c8c8c8 0%, #fbfbfb 40%, #fbfbfb 60%, #cccccc 100%);
+    }
+
+    .why-not__wrap {
+        size: 1284px 800px;
+        margin: auto;
+        padding-top: 210px;
+        background: url('../assets/cook.png') right bottom no-repeat;
+        background-size: 300px auto;
+        }
+
+    .why-not__about {
+        width: 500px;
+        margin-bottom: 95px;
+        }
+
+        .why-not__about-title {
+            margin: 0 * 30px;
+            font: 72px/1 Malina;
+            color: #2b2f5f;
+            }
+        .why-not__about-text {
+            width: 380px;
+            font: 15px/20px Helvetica, Arial;
+            color: #747474;
+            }
+
+    .why-not__icon {
+        display: inline-block;
+        size: 215px 180px;
+        font: 18px/20px Malina;
+        color: #747474;
+        }
+
+        .why-not__icon-picture {
+            size: 100% 120px;
+            margin-bottom: 20px;
+            }
+        .why-not__icon-picture_cook {
+            background: url('../assets/cook-icon.png') center no-repeat;
+            background-size: 145px auto;
+            }
+        .why-not__icon-picture_green {
+            background: url('../assets/green-icon.png') center no-repeat;
+            background-size: 145px auto;
+            }
+        .why-not__icon-picture_heart {
+            background: url('../assets/heart-icon.png') center no-repeat;
+            background-size: 145px auto;
+            }
+
+        .why-not__icon-text {
+            padding-left: 30px;
+            }
