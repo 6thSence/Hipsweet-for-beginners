@@ -190,10 +190,29 @@
         z-index: 1;
         box-sizing: border-box;
         margin: auto;
-        color: #fff;
-        font: 13px/1 Arial;
         width: 1160px;
         height: 790px;
+        color: #fff;
+        font: 13px/1 Arial;
+        overflow: hidden;
+        }
+
+    .main-section__content-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 100%;
+        width: 7000px;
+        position: relative;
+        left: 0;
+        transition: left ease-in-out 1s;
+        }
+
+    .main-section__content-item {
+        display: inline-block;
+        size: 1160px 100%;
+        position: relative;
         }
 
     .main-section__sweet_info {
@@ -284,20 +303,20 @@
             }
 
     .main-section__sweet_photo {
-        z-index: -1;
         position: absolute 50% * * 225px;
-        transform: translateY(-50%);
+        z-index: -1;
         background: url('../assets/cake.png') center no-repeat;
-        size: 485px 570px;
         background-size: cover;
+        transform: translateY(-50%);
+        size: 485px 570px;
         }
 
     .main-section__sweet_about {
         position: absolute 50% 0 * *;
-        transform: translateY(-50%);
         width: 370px;
         font: 48px/1 Malina, Helvetica, Arial;
         font-weight: 100;
+        transform: translateY(-50%);
         }
 
         .main-section__sweet-name {
@@ -306,8 +325,8 @@
             }
 
         .main-section__sweet-text {
-            font: 15px/18px Helvetica, Arial;
             margin-bottom: 35px;
+            font: 15px/18px Helvetica, Arial;
             }
 
         .main-section__sweet-price {
@@ -317,37 +336,47 @@
             }
 
         .main-section__sweet-button {
-            font: 15px/18px Helvetica, Arial;
             display: inline-block;
-            vertical-align: middle;
-            border-radius: 20px;
             box-sizing: border-box;
+            padding: * 20px *;
+            border-radius: 20px;
             background: #ffaf28;
             color: #b11d23;
-            cursor: pointer;
+            vertical-align: middle;
+            font: 15px/18px Helvetica, Arial;
             line-height: 40px;
-            padding: * 20px *;
+            cursor: pointer;
             }
         .main-section__sweet-button:hover {
             opacity: .8;
             }
 
     .main-section__toggle-menu {
-        position: absolute * * 0 50%;
-        transform: translateX(-50%);
-        list-style: none;
+        position: absolute * * 50px 50%;
         padding: 0;
+        list-style: none;
+        transform: translateX(-50%);
         }
 
     .main-section__toggle-li {
+        position: relative;
         display: inline-block;
         margin-right: 30px;
+        size: 20px;
         }
 
     .main-section__toggle-item {
+        position: absolute 50% * * 50%;
         display: inline-block;
-        background: #fff;
         border-radius: 50%;
-        size: 10px;
+        background: #fff;
         cursor: pointer;
+        transition: border ease-in .3s;
+        transform: translate(-50%, -50%);
+        size: 10px;
+        }
+    .main-section__toggle-item:hover,
+    .main-section__toggle-item_active {
+        border: solid 5px #fff;
+        transition: border ease-in .3s;
         }

@@ -44,9 +44,11 @@
         padding-left: 100px;
         box-sizing: border-box;
         font: 16px/16px Arial;
-        display: none;
+        height: 0;
+        overflow: hidden;
+        transition: height ease-in .3s;
         }
-
-    .questions__answer_show {
-        display: inline-block;
+    .questions__trigger_active + .questions__answer {
+        height: 180px;
+        overflow: scroll;
         }

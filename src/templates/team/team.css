@@ -39,7 +39,7 @@
                 transition: background ease-in .3s, color ease-in .3s;
                 }
             .team__name-link:after {
-                position: absolute * * -18px 50%;
+                position: absolute * * -20px 50%;
                 display: inline-block;
                 border: solid 20px transparent;
                 border-top: solid 10px transparent;
@@ -96,6 +96,8 @@
         }
 
         .team__content_item {
+            width: 100%;
+            display: none;
             height: 100%;
             background: url('../assets/cook-team.png') bottom no-repeat;
             background-size: 500px auto;
@@ -127,9 +129,8 @@
             font-weight: bold;
             }
 
-        .team__content_item_2,
-        .team__content_item_3 {
-            display: none;
+        .team__content_item_shown {
+            display: inline-block;
             }
 
     .order {
