@@ -248,7 +248,7 @@
             transform: translateY(-50%);
             }
         .main-section__ingredients-list:before {
-            position: absolute 25% * * -30px;
+            position: absolute 25% * * -28px;
             display: inline-block;
             border: solid 20px transparent;
             border-right: solid 15px #fff;
@@ -302,6 +302,7 @@
 
         .main-section__sweet-name {
             margin-bottom: 35px;
+            font-weight: 200;
             }
 
         .main-section__sweet-text {
@@ -312,6 +313,7 @@
         .main-section__sweet-price {
             display: inline-block;
             margin-right: 20px;
+            font-weight: 200;
             }
 
         .main-section__sweet-button {
