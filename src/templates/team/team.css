@@ -31,21 +31,21 @@
                 margin-right: 5px;
                 padding: 25px 40px;
                 width: 255px;
+                border-radius: 20px;
                 color: #2b2f60;
                 vertical-align: top;
                 font-size: 36px;
-                border-radius: 20px;
                 cursor: pointer;
                 transition: background ease-in .3s, color ease-in .3s;
                 }
             .team__name-link:after {
-                transition: border ease-in .3s;
                 position: absolute * * -18px 50%;
                 display: inline-block;
                 border: solid 20px transparent;
                 border-top: solid 10px transparent;
                 border-bottom: solid 10px transparent;
                 content: '';
+                transition: border ease-in .3s;
                 transform: translateX(-50%);
                 }
             .team__name-link:hover {
@@ -86,3 +86,114 @@
                 color: #babab9;
                 font: 16px/1 Helvetica, Arial;
                 }
+
+    .team__content {
+        position: relative;
+        width: 100%;
+        height: 640px;
+        color: #747474;
+        font: 16px/20px Arial;
+        }
+
+        .team__content_item {
+            height: 100%;
+            background: url('../assets/cook-team.png') bottom no-repeat;
+            background-size: 500px auto;
+            }
+
+        .team__content_info-left {
+            position: absolute 50% * * 0;
+            width: 325px;
+            font-style: italic;
+            transform: translateY(-50%);
+            }
+        .team__content_info-left:after {
+            position: absolute 0 -60px * *;
+            display: inline-block;
+            color: #dedede;
+            content: '"';
+            font-size: 150px;
+            opacity: .7;
+            }
+
+        .team__content_info-right {
+            position: absolute 50% 0 * *;
+            width: 405px;
+            transform: translateY(-50%);
+            }
+
+        .team__content_bold {
+            color: #393939;
+            font-weight: bold;
+            }
+
+        .team__content_item_2,
+        .team__content_item_3 {
+            display: none;
+            }
+
+    .order {
+        margin: auto;
+        border-radius: 20px;
+        background: url('../assets/bg_chocolate.png') center no-repeat;
+        background-size: 100% auto;
+        size: 885px 410px;
+        }
+
+    .order__title {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 140px 90px;
+        color: #fff;
+        font: 72px/76px Malina;
+        size: 50% 100%;
+        }
+    
+    .order__form {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 80px 45px 60px;
+        border-radius: 0 20px 20px 0;
+        background: rgba(0, 0, 0, .6);
+        color: #fff;
+        vertical-align: top;
+        font: 16px/36px Arial;
+        size: 49% 100%;
+        }
+
+    .order__input {
+        margin-bottom: 30px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: solid 1px #fff;
+        background: none;
+        color: #fff;
+        font-weight: bold;
+        font: 16px/36px Arial;
+        }
+
+    .order__checkbox {
+        outline: none;
+        }
+
+    .order__checkbox-label {
+        cursor: pointer;
+        }
+
+    .order__button {
+        position: absolute * -25px -25px *;
+        display: inline-block;
+        border-radius: 50%;
+        background: #ffb100 inline('assets/arrows.svg') no-repeat;
+        background-size: 50px;
+        background-position: 26px 25px;
+        size: 100px;
+        }
+    .order__button:hover {
+        background: #ffb100 inline('assets/arrows.svg') no-repeat;
+        background-size: 55px;
+        background-position: 24px 24px;
+        }
