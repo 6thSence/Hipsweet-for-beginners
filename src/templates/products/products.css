@@ -29,69 +29,41 @@
         list-style: none;
         }
     .products__item {
+        position: relative;
         display: inline-block;
         margin-right: 30px;
+        padding-top: 295px;
         width: 260px;
         vertical-align: top;
         text-align: center;
-        position: relative;
-        padding-top: 295px;
         }
 
         .products__item-photo {
             position: absolute 0 * *;
-            margin-bottom: 10px;
-            size: 100% 285px;
             z-index: 1;
-            }
-        .products__item-photo_1 {
-            background: url('../assets/sweet-8.png') center no-repeat;
-            background-size: 100% auto;
-            }
-        .products__item-photo_2 {
-            background: url('../assets/sweet-1.png') center no-repeat;
-            background-size: 100% auto;
-            }
-        .products__item-photo_3 {
-            background: url('../assets/sweet-2.png') center no-repeat;
-            background-size: 100% auto;
-            }
-        .products__item-photo_4 {
-            background: url('../assets/sweet-6.png') center no-repeat;
-            background-size: 100% auto;
-            }
-        .products__item-photo_5 {
-            background: url('../assets/sweet-5.png') center no-repeat;
-            background-size: 100% auto;
-            }
-        .products__item-photo_6 {
-            background: url('../assets/sweet-4.png') center no-repeat;
-            background-size: 100% auto;
-            }
-        .products__item-photo_7 {
-            background: url('../assets/sweet-3.png') center no-repeat;
-            background-size: 80% auto;
-            }
-        .products__item-photo_8 {
-            background: url('../assets/sweet-7.png') center no-repeat;
-            background-size: 100% auto;
+            margin-bottom: 10px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            size: 100% 285px;
             }
 
         .products__item-name {
+            position: relative;
             margin-bottom: 10px;
             color: #393939;
             font: 36px/38px Malina;
-            position: relative;
             }
         .products__item-name:after{
-            content: '';
-            display: block;
-            position: absolute -260px * *;
-            size: 240px;
-            background: #000;
-            opacity: .3;
-            border-radius: 50%;
+            position: absolute -240px * * 50%;
             z-index: 0;
+            display: block;
+            border-radius: 50%;
+            background: #000;
+            content: '';
+            opacity: .3;
+            transform: translateX(-50%);
+            size: 200px;
             }
         .products__item-about {
             color: #ab594a;

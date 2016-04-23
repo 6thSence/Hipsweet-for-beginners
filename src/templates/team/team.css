@@ -96,20 +96,21 @@
         }
 
         .team__content_item {
-            width: 100%;
             display: none;
+            box-sizing: border-box;
+            padding: 60px 0 0;
+            width: 100%;
             height: 100%;
             background: url('../assets/cook-team.png') bottom no-repeat;
             background-size: 500px auto;
             }
 
-        .team__content_info-left {
-            position: absolute 50% * * 0;
-            width: 325px;
+        .team__content_info {
             font-style: italic;
-            transform: translateY(-50%);
+            columns: 2 12em;
+            column-gap: 500px;
             }
-        .team__content_info-left:after {
+        .team__content_info p:first-child:after {
             position: absolute 0 -60px * *;
             display: inline-block;
             color: #dedede;
@@ -172,8 +173,8 @@
         border-bottom: solid 1px #fff;
         background: none;
         color: #fff;
-        font-weight: bold;
         font: 16px/36px Arial;
+        font-weight: bold;
         }
 
     .order__checkbox {
@@ -189,12 +190,12 @@
         display: inline-block;
         border-radius: 50%;
         background: #ffb100 inline('assets/arrows.svg') no-repeat;
-        background-size: 50px;
         background-position: 26px 25px;
+        background-size: 50px;
         size: 100px;
         }
     .order__button:hover {
         background: #ffb100 inline('assets/arrows.svg') no-repeat;
-        background-size: 55px;
         background-position: 24px 24px;
+        background-size: 55px;
         }

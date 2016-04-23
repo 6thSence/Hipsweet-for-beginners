@@ -1,13 +1,13 @@
 .main-section {
     position: relative;
+    padding: 0 0 60px;
     margin: 0;
     min-width: 1024px;
-    min-height: 1030px;
     width: 100%;
     background: radial-gradient(ellipse at center, rgba(224,65,68,1) 0%, rgba(204,51,54,1) 51%, rgba(163,22,27,1) 100%);
     background-position: top right;
     background-size: 200%;
-    font-family: Malina;
+    font-family: Malina, Helvetica, Arial, sans-serif;
     }
 .main-section:after {
     position: absolute;
@@ -18,7 +18,7 @@
     color: #fff;
     content: 'пирожинка';
     text-transform: uppercase;
-    font: 184px/1 Malina, Helvetica;
+    font: 184px/1 Malina, Helvetica, Arial, sans-serif;
     opacity: .1;
     transform: translate(-50%, -50%);
     }
@@ -31,7 +31,7 @@
 
         .header__wrap {
             margin: auto;
-            width: 1285px;
+            width: 1250px;
             }
         .header__wrap:after{
             display: block;
@@ -66,15 +66,19 @@
 
             .header__navigation {
                 display: inline-block;
+                padding: 50px 0 0;
+                vertical-align: middle;
+                text-align: justify;
+                max-width: 750px;
                 }
 
             .header__navigation-link {
                 position: relative;
                 display: inline-block;
-                margin-right: 75px;
+                padding: 0 38px 0;
                 color: #fff;
                 text-decoration: none;
-                font: 16px/125px Arial;
+                font: 16px/1 Arial;
                 }
             .header__navigation-link:hover {
                 color: #ef9925;
@@ -86,7 +90,7 @@
             .header__navigation-link_sweets:after,
             .header__navigation-link_company:after,
             .header__navigation-link_team:after {
-                position: absolute 50% -15px * *;
+                position: absolute 50% 15px * *;
                 background: inline('./assets/arrows.svg') center no-repeat;
                 background-size: cover;
                 content: '';
@@ -99,6 +103,8 @@
 
             .header__socials {
                 display: inline-block;
+                vertical-align: middle;
+                padding: 50px 0 0;
                 }
 
             .header__navigation-link_cabinet,
@@ -123,7 +129,7 @@
                 opacity: 1;
                 }
             .header__team-list {
-                position: absolute 75px * * 50%;
+                position: absolute 35px * * 50%;
                 z-index: -1;
                 box-sizing: border-box;
                 padding: 40px 0;
@@ -246,25 +252,24 @@
         .main-section__ingredients:hover .main-section__ingredients-text {
             color: #ef9925;
             }
-        .main-section__ingredients:hover + .main-section__ingredients-list{
+        .main-section__ingredients:hover + .main-section__ingredients-list,
+        .main-section__ingredients-list:hover {
             z-index: 3;
-            opacity: 1;
+            transform: translate(-30px, -50%);
             }
 
         .main-section__ingredients-list {
             position: absolute 50% * * 140px;
             box-sizing: border-box;
             padding: 55px;
-            min-height: 290px;
             width: 400px;
             border-radius: 10px;
             background: #fff;
             color: #575757;
             list-style: none;
             font: 16px/32px Helvetica, Arial;
-            opacity: 0;
             transition: opacity .2s ease-in .3s;
-            transform: translateY(-50%);
+            transform: translate(-99999px, -50%);
             }
         .main-section__ingredients-list:before {
             position: absolute 25% * * -28px;
@@ -320,7 +325,7 @@
         }
 
         .main-section__sweet-name {
-            margin-bottom: 35px;
+            margin: 0 0 35px;
             font-weight: 200;
             }
 
