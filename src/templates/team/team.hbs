@@ -46,10 +46,13 @@
             <form action="" class="order__form" id="form">
                 <input class="order__input" type="text" name="name" placeholder="Введите ваше имя" required>
                 <input class="order__input" type="email" name="email" placeholder="Введите ваш Email" required>
-                <input class="order__input" type="tel" name="tell" placeholder="8 (___) ___-__-__" required>
-                <input class="order__checkbox" type="checkbox" name="want-to-call" id="order-call">
-                <label class="order__checkbox-label" for="order-call">Заказать обратный звонок</label>
-                <a href=# class="order__button" onclick="document.getElementById('order').submit()" ></a>
+                <input class="order__input" type="tel" name="tell" placeholder="+7(___) ___-____" required id="phone">
+                <p class="order__checkbox-wrap">
+                    <input class="order__checkbox" type="checkbox" name="want-to-call" id="order-call">
+                    <span class="order__checkbox-twin"></span>
+                    <label class="order__checkbox-label" for="order-call">Заказать обратный звонок</label>
+                </p>
+                <button class="order__button" type="submit" ></button>
             </form>
         </div>
     </div>

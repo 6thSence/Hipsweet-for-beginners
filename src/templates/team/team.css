@@ -12,12 +12,11 @@
 
         .team__title {
             display: inline-block;
-            margin: 0;
-            margin-right: 70px;
+            margin: 0 70px 0 0;
             width: 350px;
             color: #2b2f60;
             vertical-align: top;
-            font: 72px/1 Malina;
+            font: 72px/1 Malina, Helvetica, Arial, sans-serif;
             }
 
         .team__navigation {
@@ -28,7 +27,7 @@
                 position: relative;
                 display: inline-block;
                 box-sizing: border-box;
-                margin-right: 5px;
+                margin: 0 5px 0 0;
                 padding: 25px 40px;
                 width: 255px;
                 border-radius: 20px;
@@ -50,8 +49,7 @@
                 }
             .team__name-link:hover {
                 border-radius: 20px;
-                background: #893213;
-                color: #ffa82b;
+                color: #ffa82b #893213;
                 vertical-align: top;
                 font-size: 36px;
                 cursor: pointer;
@@ -65,8 +63,7 @@
 
             .team__name-link_active {
                 border-radius: 20px;
-                background: #893213;
-                color: #ffa82b;
+                color: #ffa82b #893213;
                 vertical-align: top;
                 font-size: 36px;
                 cursor: pointer;
@@ -84,25 +81,22 @@
 
             .team__profession {
                 color: #babab9;
-                font: 16px/1 Helvetica, Arial;
+                font: 16px/1 Helvetica, Arial, sans-serif;
                 }
 
     .team__content {
         position: relative;
-        width: 100%;
-        height: 640px;
         color: #747474;
         font: 16px/20px Arial;
+        size: 100% 640px;
         }
 
         .team__content_item {
             display: none;
             box-sizing: border-box;
             padding: 60px 0 0;
-            width: 100%;
-            height: 100%;
-            background: url('../assets/cook-team.png') bottom no-repeat;
-            background-size: 500px auto;
+            background: url('../assets/cook-team.png') bottom/500px auto no-repeat;
+            size: 100%;
             }
 
         .team__content_info {
@@ -135,67 +129,88 @@
             }
 
     .order {
+        position: relative;
         margin: auto;
         border-radius: 20px;
-        background: url('../assets/bg_chocolate.png') center no-repeat;
-        background-size: 100% auto;
+        background: url('../assets/bg_chocolate.png') center/cover no-repeat;
         size: 885px 410px;
         }
 
     .order__title {
+        position: absolute 140px * * 90px;
         display: inline-block;
         box-sizing: border-box;
         margin: 0;
-        padding: 140px 90px;
+        width: 50%;
         color: #fff;
-        font: 72px/76px Malina;
-        size: 50% 100%;
+        font: 72px/76px Malina, Helvetica, Arial, sans-serif;
         }
     
     .order__form {
-        position: relative;
+        position: absolute 0 0 0 *;
         display: inline-block;
         box-sizing: border-box;
         padding: 80px 45px 60px;
         border-radius: 0 20px 20px 0;
-        background: rgba(0, 0, 0, .6);
-        color: #fff;
+        color: #fff rgba(0, 0, 0, .6);
         vertical-align: top;
         font: 16px/36px Arial;
-        size: 49% 100%;
+        size: 50% 100%;
         }
 
     .order__input {
-        margin-bottom: 30px;
+        margin: 0 0 30px;
         width: 100%;
         outline: none;
         border: none;
         border-bottom: solid 1px #fff;
-        background: none;
-        color: #fff;
-        font: 16px/36px Arial;
-        font-weight: bold;
+        color: #fff transparent;
+        font: bold 16px/36px Arial;
         }
 
-    .order__checkbox {
-        outline: none;
+    .order__checkbox-wrap {
+        position: relative;
         }
 
-    .order__checkbox-label {
-        cursor: pointer;
-        }
+        .order__checkbox {
+            display: none;
+
+            &:checked + .order__checkbox-twin {
+                background:
+                    inline('./assets/square.svg') left/15px no-repeat,
+                    inline('./assets/check.svg') 2px -2px/15px no-repeat;
+                }
+            }
+
+        .order__checkbox-label {
+            cursor: pointer;
+            }
+
+        .order__checkbox-twin {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 5px 0 0;
+            size: 15px;
+            background: inline('./assets/square.svg') left/15px no-repeat;
+            cursor: pointer;
+            }
 
     .order__button {
         position: absolute * -25px -25px *;
         display: inline-block;
+        outline: none;
+        border: none;
         border-radius: 50%;
         background: #ffb100 inline('assets/arrows.svg') no-repeat;
         background-position: 26px 25px;
         background-size: 50px;
+        cursor: pointer;
         size: 100px;
-        }
-    .order__button:hover {
-        background: #ffb100 inline('assets/arrows.svg') no-repeat;
-        background-position: 24px 24px;
-        background-size: 55px;
+        
+        &:hover {
+            background: #ffb100 inline('assets/arrows.svg') 24px 24px/55px no-repeat;
+            }
+        &:active {
+            box-shadow: inset 0 0 15px yellow;
+            }
         }

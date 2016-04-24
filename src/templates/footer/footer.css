@@ -1,6 +1,5 @@
 .footer {
-    width: 100%;
-    height: 90px;
+    size: 100% 90px;
     }
 
     .footer__wrap {
@@ -17,8 +16,7 @@
 
         .footer__logo {
             display: inline-block;
-            background: inline('assets/logo.svg') center no-repeat;
-            background-size: cover;
+            background: inline('assets/logo.svg') center/cover no-repeat;
             vertical-align: middle;
             size: 90px;
             }
@@ -30,16 +28,18 @@
             }
 
     .footer__info {
-        display: inline-block;
+        float: left;
         height: 100%;
         }
 
         .footer__copyright,
         .footer__adress {
             display: inline-block;
+            padding: 45px 0 0;
             vertical-align: middle;
-            font: 14px/90px Arial;
+            font: 14px/1 Arial;
             color: #8d8d8d;
+            max-width: 300px;
             }
 
         .footer__copyright {
@@ -55,7 +55,7 @@
         .footer__social {
             display: inline-block;
             size: 40px 90px;
-            margin-right: 15px;
+            padding: 0 8px;
             transition: background ease-in .3s;
             }
         

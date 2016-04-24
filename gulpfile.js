@@ -38,6 +38,7 @@ switch (config.env) {
     case 'development':
         gulp.task('default', [
             'fonts',
+            'assets',
             'scripts',
             'styles',
             'compile',
@@ -48,6 +49,7 @@ switch (config.env) {
     case 'production':
         gulp.task('default', [
             'fonts',
+            'assets',
             'scripts',
             'styles',
             'compile'

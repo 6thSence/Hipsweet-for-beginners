@@ -1,18 +1,18 @@
 .main-section {
     position: relative;
-    padding: 0 0 60px;
     margin: 0;
+    padding: 0 0 60px;
     min-width: 1024px;
     width: 100%;
-    background: radial-gradient(ellipse at center, rgba(224,65,68,1) 0%, rgba(204,51,54,1) 51%, rgba(163,22,27,1) 100%);
-    background-position: top right;
-    background-size: 200%;
+    background:
+        radial-gradient(ellipse at center,
+            rgba(224,65,68,1) 0%,
+            rgba(204,51,54,1) 51%,
+            rgba(163,22,27,1) 100%) top right/200%;
     font-family: Malina, Helvetica, Arial, sans-serif;
     }
 .main-section:after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: absolute 50% * * 50%;
     z-index: 0;
     display: block;
     color: #fff;
@@ -23,10 +23,8 @@
     transform: translate(-50%, -50%);
     }
 
-
     .header {
-        width: 100%;
-        height: 125px;
+        size: 100% 125px;
         }
 
         .header__wrap {
@@ -41,15 +39,13 @@
 
         .header__info {
             float: left;
-            width: 390px;
-            height: 125px;
             font-size: 48px;
+            size: 390px 125px;
             }
 
             .header__logo {
                 display: inline-block;
-                background: inline('assets/logo.svg') center no-repeat;
-                background-size: cover;
+                background: inline('assets/logo.svg') center/cover no-repeat;
                 vertical-align: middle;
                 size: 110px 95px;
                 }
@@ -67,9 +63,9 @@
             .header__navigation {
                 display: inline-block;
                 padding: 50px 0 0;
+                max-width: 750px;
                 vertical-align: middle;
                 text-align: justify;
-                max-width: 750px;
                 }
 
             .header__navigation-link {
@@ -78,21 +74,19 @@
                 padding: 0 38px 0;
                 color: #fff;
                 text-decoration: none;
-                font: 16px/1 Arial;
+                font: 16px/1 Arial, Helvetica, sans-serif;
                 }
             .header__navigation-link:hover {
                 color: #ef9925;
                 }
             .header__navigation-link:hover:after {
-                background: inline('./assets/arrows-yellow.svg') center no-repeat;
-                background-size: cover;
+                background: inline('./assets/arrows-yellow.svg') center/cover no-repeat;
                 }
             .header__navigation-link_sweets:after,
             .header__navigation-link_company:after,
             .header__navigation-link_team:after {
                 position: absolute 50% 15px * *;
-                background: inline('./assets/arrows.svg') center no-repeat;
-                background-size: cover;
+                background: inline('./assets/arrows.svg') center/cover no-repeat;
                 content: '';
                 transform: translate(0, -50%);
                 size: 8px;
@@ -103,8 +97,8 @@
 
             .header__socials {
                 display: inline-block;
-                vertical-align: middle;
                 padding: 50px 0 0;
+                vertical-align: middle;
                 }
 
             .header__navigation-link_cabinet,
@@ -122,7 +116,7 @@
             .header__team-wrap {
                 position: relative;
                 display: inline-block;
-                margin-right: 75px;
+                margin: 0 75px 0 0;
                 }
             .header__navigation-link_team:hover + .header__team-list {
                 z-index: 2;
@@ -137,7 +131,7 @@
                 border-radius: 10px;
                 background: #fff;
                 list-style: none;
-                font: 16px/32px Helvetica, Arial;
+                font: 16px/32px Helvetica, Arial, sans-serif;
                 opacity: 0;
                 transition: opacity .2s ease-in .2s;
                 transform: translate(-50%, 0);
@@ -167,8 +161,7 @@
                 color: #303030;
                 }
             .header__team-item:before {
-                position: absolute;
-                left: 0;
+                position: absolute * * * 0;
                 display: inline-block;
                 border: solid 10px transparent;
                 border-left: solid 10px #ef9925;
@@ -181,44 +174,39 @@
                 }
 
             .header__navigation-link_cabinet {
-                margin-right: 15px;
-                background: rgba(255, 255, 255, .2) inline('assets/people.svg') center no-repeat;
-                background-size: 18px auto;
+                margin: 0 15px 0 0;
+                background: rgba(255, 255, 255, .2) inline('assets/people.svg') center/18px auto no-repeat;
                 }
             .header__navigation-link_search {
                 margin: 0;
-                background: rgba(255, 255, 255, .2) inline('assets/search.svg') center no-repeat;
-                background-size: 18px auto;
+                background: rgba(255, 255, 255, .2) inline('assets/search.svg') center/18px auto no-repeat;
                 }
 
     .main-section__content {
         position: relative;
         z-index: 1;
+        overflow: hidden;
         box-sizing: border-box;
         margin: auto;
-        width: 1160px;
-        height: 790px;
         color: #fff;
-        font: 13px/1 Arial;
-        overflow: hidden;
+        font: 13px/1 Arial, Helvetica, sans-serif;
+        size: 1160px 790px;
         }
 
     .main-section__content-list {
-        list-style: none;
+        position: relative * * * 0;
+        display: block;
         margin: 0;
         padding: 0;
-        display: block;
-        height: 100%;
-        width: 7000px;
-        position: relative;
-        left: 0;
+        list-style: none;
         transition: left ease-in-out 1s;
+        size: 7000px 100%;
         }
 
     .main-section__content-item {
+        position: relative;
         display: inline-block;
         size: 1160px 100%;
-        position: relative;
         }
 
     .main-section__sweet_info {
@@ -231,7 +219,7 @@
 
         .main-section__ingredients-wrap {
             position: relative;
-            margin-bottom: 75px;
+            margin: 0 0 75px;
             }
         .main-section__ingredients{
             cursor: pointer;
@@ -240,14 +228,12 @@
             position: absolute -55px * * 50%;
             display: inline-block;
             border-radius: 50%;
-            background: rgba(255, 255, 255, .2) inline('assets/cooking.svg') center no-repeat;
-            background-size: 18px auto;
+            background: rgba(255, 255, 255, .2) inline('assets/cooking.svg') center/18px auto no-repeat;
             transform: translateX(-50%);
             size: 42px;
             }
         .main-section__ingredients:hover .main-section__ingredients-icon{
-            background: #ffaf28 inline('assets/cooking-red.svg') center no-repeat;
-            background-size: 18px auto;
+            background: #ffaf28 inline('assets/cooking-red.svg') center/18px auto no-repeat;
             }
         .main-section__ingredients:hover .main-section__ingredients-text {
             color: #ef9925;
@@ -264,10 +250,9 @@
             padding: 55px;
             width: 400px;
             border-radius: 10px;
-            background: #fff;
-            color: #575757;
+            color: #575757 #fff;
             list-style: none;
-            font: 16px/32px Helvetica, Arial;
+            font: 16px/32px Helvetica, Arial, sans-serif;
             transition: opacity .2s ease-in .3s;
             transform: translate(-99999px, -50%);
             }
@@ -280,38 +265,32 @@
             content: '';
             }
         .main-section__ingredients-item_bread {
-            background: inline('assets/food-4.svg') left no-repeat;
-            background-size: 20px auto;
+            background: inline('assets/food-4.svg') left/20px auto no-repeat;
             }
         .main-section__ingredients-item_eggs {
-            background: inline('assets/food.svg') left no-repeat;
-            background-size: 20px auto;
+            background: inline('assets/food.svg') left/20px auto no-repeat;
             }
         .main-section__ingredients-item_sugar {
-            background: inline('assets/food-1.svg') left no-repeat;
-            background-size: 20px auto;
+            background: inline('assets/food-1.svg') left/20px auto no-repeat;
             }
         .main-section__ingredients-item_butter {
-            background: inline('assets/food-2.svg') left no-repeat;
-            background-size: 20px auto;
+            background: inline('assets/food-2.svg') left/20px auto no-repeat;
             }
         .main-section__ingredients-item_milk {
-            background: inline('assets/food-3.svg') left no-repeat;
-            background-size: 20px auto;
+            background: inline('assets/food-3.svg') left/20px auto no-repeat;
             }
         .main-section__save-text {
             color: rgba(255, 255, 255, .3);
             }
 
         .main-section__save-count {
-            font: 24px/26px Malina;
+            font: 24px/26px Malina, Helvetica, Arial, sans-serif;
             }
 
     .main-section__sweet_photo {
         position: absolute 50% * * 225px;
         z-index: -1;
-        background: url('../assets/cake.png') center no-repeat;
-        background-size: cover;
+        background: url('../assets/cake.png') center/cover no-repeat;
         transform: translateY(-50%);
         size: 485px 570px;
         }
@@ -319,8 +298,7 @@
     .main-section__sweet_about {
         position: absolute 50% 0 * *;
         width: 370px;
-        font: 48px/1 Malina, Helvetica, Arial;
-        font-weight: 100;
+        font: 100 48px/1 Malina, Helvetica, Arial, sans-serif;
         transform: translateY(-50%);
         }
 
@@ -330,13 +308,13 @@
             }
 
         .main-section__sweet-text {
-            margin-bottom: 35px;
-            font: 15px/18px Helvetica, Arial;
+            margin: 0 0 35px;
+            font: 15px/18px Helvetica, Arial, sans-serif;
             }
 
         .main-section__sweet-price {
             display: inline-block;
-            margin-right: 20px;
+            margin: 0 20px 0 0;
             font-weight: 200;
             }
 
@@ -345,11 +323,9 @@
             box-sizing: border-box;
             padding: * 20px *;
             border-radius: 20px;
-            background: #ffaf28;
-            color: #b11d23;
+            color: #b11d23 #ffaf28;
             vertical-align: middle;
-            font: 15px/18px Helvetica, Arial;
-            line-height: 40px;
+            font: 15px/40px Helvetica, Arial, sans-serif;
             cursor: pointer;
             }
         .main-section__sweet-button:hover {
@@ -358,6 +334,7 @@
 
     .main-section__toggle-menu {
         position: absolute * * 50px 50%;
+        z-index: 1;
         padding: 0;
         list-style: none;
         transform: translateX(-50%);
@@ -366,7 +343,7 @@
     .main-section__toggle-li {
         position: relative;
         display: inline-block;
-        margin-right: 30px;
+        margin: 0 30px 0 0;
         size: 20px;
         }
 

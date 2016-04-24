@@ -27,3 +27,19 @@ var toggleTeam = function() {
 }();
 
 toggleTeam.init();
+
+var validPhoneInput = function() {
+    var eventListener = function() {
+        jQuery(function($){
+            $('#phone').text = 'color'
+            $("#phone").mask("+7(999) 999-9999");
+        });
+    };
+
+    return {
+        init: eventListener
+    }
+}();
+
+validPhoneInput.init();
+

@@ -7,10 +7,10 @@
 
     .why-not__wrap {
         margin: auto;
-        padding-top: 210px;
-        background: url('../assets/cook.png') right bottom no-repeat;
-        background-size: 300px auto;
-        size: 1284px 800px;
+        padding: 210px 0 0;
+        min-height: 800px;
+        width: 1284px;
+        background: url('../assets/cook.png') right bottom/300px auto no-repeat;
         }
 
     .why-not__about {
@@ -21,12 +21,13 @@
         .why-not__about-title {
             margin: 0 * 30px;
             color: #2b2f5f;
-            font: 72px/1 Malina;
+            font: 72px/1 Malina, Helvetica, Arial, sans-serif;
             }
+
         .why-not__about-text {
             width: 380px;
             color: #747474;
-            font: 15px/20px Helvetica, Arial;
+            font: 15px/20px Helvetica, Arial, sans-serif;
             }
 
     .why-not__icons {
@@ -37,27 +38,24 @@
         display: inline-block;
         margin: 0 0 30px;
         color: #747474;
-        font: 18px/20px Malina;
+        font: 18px/20px Malina, Helvetica, sans-serif;
         size: 215px 180px;
         }
 
         .why-not__icon-picture {
-            margin-bottom: 20px;
+            margin: 0 0 20px;
             size: 100% 120px;
             }
         .why-not__icon-picture_cook {
-            background: url('../assets/cook-icon.png') center no-repeat;
-            background-size: 145px auto;
+            background: url('../assets/cook-icon.png') center/145px auto no-repeat;
             }
         .why-not__icon-picture_green {
-            background: url('../assets/green-icon.png') center no-repeat;
-            background-size: 145px auto;
+            background: url('../assets/green-icon.png') center/145px auto no-repeat;
             }
         .why-not__icon-picture_heart {
-            background: url('../assets/heart-icon.png') center no-repeat;
-            background-size: 145px auto;
+            background: url('../assets/heart-icon.png') center/145px auto no-repeat;
             }
 
         .why-not__icon-text {
-            padding-left: 30px;
+            padding: 0 0 0 30px;
             }
