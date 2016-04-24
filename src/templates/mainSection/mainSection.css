@@ -319,6 +319,7 @@
             }
 
         .main-section__sweet-button {
+            text-decoration: none;
             display: inline-block;
             box-sizing: border-box;
             padding: * 20px *;
